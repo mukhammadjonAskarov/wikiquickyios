@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE764A622625749E000A45B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A612625749E000A45B8 /* AppDelegate.swift */; };
+		CE764A642625749E000A45B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A632625749E000A45B8 /* SceneDelegate.swift */; };
+		CE764A662625749E000A45B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A652625749E000A45B8 /* ViewController.swift */; };
+		CE764A6C2625749E000A45B8 /* WikiQuicky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE764A6A2625749E000A45B8 /* WikiQuicky.xcdatamodeld */; };
+		CE764A6E262574A1000A45B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE764A6D262574A1000A45B8 /* Assets.xcassets */; };
+		CE764A71262574A1000A45B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE764A6F262574A1000A45B8 /* LaunchScreen.storyboard */; };
+		CE764A7C262574A2000A45B8 /* WikiQuickyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A7B262574A2000A45B8 /* WikiQuickyTests.swift */; };
+		CE764A87262574A2000A45B8 /* WikiQuickyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A86262574A2000A45B8 /* WikiQuickyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE764A78262574A2000A45B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE764A562625749E000A45B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE764A5D2625749E000A45B8;
+			remoteInfo = WikiQuicky;
+		};
+		CE764A83262574A2000A45B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE764A562625749E000A45B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE764A5D2625749E000A45B8;
+			remoteInfo = WikiQuicky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE764A5E2625749E000A45B8 /* WikiQuicky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiQuicky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE764A612625749E000A45B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE764A632625749E000A45B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE764A652625749E000A45B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE764A6B2625749E000A45B8 /* WikiQuicky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WikiQuicky.xcdatamodel; sourceTree = "<group>"; };
+		CE764A6D262574A1000A45B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE764A70262574A1000A45B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE764A72262574A1000A45B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE764A77262574A2000A45B8 /* WikiQuickyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiQuickyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE764A7B262574A2000A45B8 /* WikiQuickyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiQuickyTests.swift; sourceTree = "<group>"; };
+		CE764A7D262574A2000A45B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE764A82262574A2000A45B8 /* WikiQuickyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiQuickyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE764A86262574A2000A45B8 /* WikiQuickyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiQuickyUITests.swift; sourceTree = "<group>"; };
+		CE764A88262574A2000A45B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE764A5B2625749E000A45B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A74262574A2000A45B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A7F262574A2000A45B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE764A552625749E000A45B8 = {
+			isa = PBXGroup;
+			children = (
+				CE764A602625749E000A45B8 /* WikiQuicky */,
+				CE764A7A262574A2000A45B8 /* WikiQuickyTests */,
+				CE764A85262574A2000A45B8 /* WikiQuickyUITests */,
+				CE764A5F2625749E000A45B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE764A5F2625749E000A45B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE764A5E2625749E000A45B8 /* WikiQuicky.app */,
+				CE764A77262574A2000A45B8 /* WikiQuickyTests.xctest */,
+				CE764A82262574A2000A45B8 /* WikiQuickyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE764A602625749E000A45B8 /* WikiQuicky */ = {
+			isa = PBXGroup;
+			children = (
+				CE764AB726257DD5000A45B8 /* Extensions */,
+				CE764AB626257DB3000A45B8 /* NetworkManager */,
+				CE764AAB26257B4D000A45B8 /* Source */,
+				CE764A9E262574E6000A45B8 /* Storyboards */,
+				CE764A9D262574D6000A45B8 /* Supporting Files */,
+				CE764A652625749E000A45B8 /* ViewController.swift */,
+			);
+			path = WikiQuicky;
+			sourceTree = "<group>";
+		};
+		CE764A7A262574A2000A45B8 /* WikiQuickyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE764A7B262574A2000A45B8 /* WikiQuickyTests.swift */,
+				CE764A7D262574A2000A45B8 /* Info.plist */,
+			);
+			path = WikiQuickyTests;
+			sourceTree = "<group>";
+		};
+		CE764A85262574A2000A45B8 /* WikiQuickyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE764A86262574A2000A45B8 /* WikiQuickyUITests.swift */,
+				CE764A88262574A2000A45B8 /* Info.plist */,
+			);
+			path = WikiQuickyUITests;
+			sourceTree = "<group>";
+		};
+		CE764A9D262574D6000A45B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE764A6A2625749E000A45B8 /* WikiQuicky.xcdatamodeld */,
+				CE764A72262574A1000A45B8 /* Info.plist */,
+				CE764A6D262574A1000A45B8 /* Assets.xcassets */,
+				CE764A612625749E000A45B8 /* AppDelegate.swift */,
+				CE764A632625749E000A45B8 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE764A9E262574E6000A45B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE764A6F262574A1000A45B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE764AAB26257B4D000A45B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CE764AB526257D59000A45B8 /* Menu */,
+				CE764AB426257D4B000A45B8 /* AllFunctionality */,
+				CE764AB326257D1E000A45B8 /* Authorization */,
+				CE764AAE26257C54000A45B8 /* Launchscreen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE764AAE26257C54000A45B8 /* Launchscreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launchscreen;
+			sourceTree = "<group>";
+		};
+		CE764AB026257CF7000A45B8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CE764AB126257CFC000A45B8 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		CE764AB226257D05000A45B8 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		CE764AB326257D1E000A45B8 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				CE764AB026257CF7000A45B8 /* SignUp */,
+				CE764AB126257CFC000A45B8 /* LogIn */,
+				CE764AB226257D05000A45B8 /* ForgotPassword */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		CE764AB426257D4B000A45B8 /* AllFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AllFunctionality;
+			sourceTree = "<group>";
+		};
+		CE764AB526257D59000A45B8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CE764AB626257DB3000A45B8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CE764AB726257DD5000A45B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE764A5D2625749E000A45B8 /* WikiQuicky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE764A8B262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuicky" */;
+			buildPhases = (
+				CE764A5A2625749E000A45B8 /* Sources */,
+				CE764A5B2625749E000A45B8 /* Frameworks */,
+				CE764A5C2625749E000A45B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiQuicky;
+			productName = WikiQuicky;
+			productReference = CE764A5E2625749E000A45B8 /* WikiQuicky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE764A76262574A2000A45B8 /* WikiQuickyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE764A8E262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuickyTests" */;
+			buildPhases = (
+				CE764A73262574A2000A45B8 /* Sources */,
+				CE764A74262574A2000A45B8 /* Frameworks */,
+				CE764A75262574A2000A45B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE764A79262574A2000A45B8 /* PBXTargetDependency */,
+			);
+			name = WikiQuickyTests;
+			productName = WikiQuickyTests;
+			productReference = CE764A77262574A2000A45B8 /* WikiQuickyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE764A81262574A2000A45B8 /* WikiQuickyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE764A91262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuickyUITests" */;
+			buildPhases = (
+				CE764A7E262574A2000A45B8 /* Sources */,
+				CE764A7F262574A2000A45B8 /* Frameworks */,
+				CE764A80262574A2000A45B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE764A84262574A2000A45B8 /* PBXTargetDependency */,
+			);
+			name = WikiQuickyUITests;
+			productName = WikiQuickyUITests;
+			productReference = CE764A82262574A2000A45B8 /* WikiQuickyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE764A562625749E000A45B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CE764A5D2625749E000A45B8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CE764A76262574A2000A45B8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE764A5D2625749E000A45B8;
+					};
+					CE764A81262574A2000A45B8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE764A5D2625749E000A45B8;
+					};
+				};
+			};
+			buildConfigurationList = CE764A592625749E000A45B8 /* Build configuration list for PBXProject "WikiQuicky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE764A552625749E000A45B8;
+			productRefGroup = CE764A5F2625749E000A45B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE764A5D2625749E000A45B8 /* WikiQuicky */,
+				CE764A76262574A2000A45B8 /* WikiQuickyTests */,
+				CE764A81262574A2000A45B8 /* WikiQuickyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE764A5C2625749E000A45B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE764A71262574A1000A45B8 /* LaunchScreen.storyboard in Resources */,
+				CE764A6E262574A1000A45B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A75262574A2000A45B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A80262574A2000A45B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE764A5A2625749E000A45B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE764A662625749E000A45B8 /* ViewController.swift in Sources */,
+				CE764A6C2625749E000A45B8 /* WikiQuicky.xcdatamodeld in Sources */,
+				CE764A622625749E000A45B8 /* AppDelegate.swift in Sources */,
+				CE764A642625749E000A45B8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A73262574A2000A45B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE764A7C262574A2000A45B8 /* WikiQuickyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE764A7E262574A2000A45B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE764A87262574A2000A45B8 /* WikiQuickyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE764A79262574A2000A45B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE764A5D2625749E000A45B8 /* WikiQuicky */;
+			targetProxy = CE764A78262574A2000A45B8 /* PBXContainerItemProxy */;
+		};
+		CE764A84262574A2000A45B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE764A5D2625749E000A45B8 /* WikiQuicky */;
+			targetProxy = CE764A83262574A2000A45B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE764A6F262574A1000A45B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE764A70262574A1000A45B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE764A89262574A2000A45B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE764A8A262574A2000A45B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE764A8C262574A2000A45B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = "WikiQuicky/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuicky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE764A8D262574A2000A45B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = "WikiQuicky/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuicky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE764A8F262574A2000A45B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = WikiQuickyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuickyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiQuicky.app/WikiQuicky";
+			};
+			name = Debug;
+		};
+		CE764A90262574A2000A45B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = WikiQuickyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuickyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiQuicky.app/WikiQuicky";
+			};
+			name = Release;
+		};
+		CE764A92262574A2000A45B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = WikiQuickyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuickyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiQuicky;
+			};
+			name = Debug;
+		};
+		CE764A93262574A2000A45B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3REK878U9T;
+				INFOPLIST_FILE = WikiQuickyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssd.wikiquicky.WikiQuickyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiQuicky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE764A592625749E000A45B8 /* Build configuration list for PBXProject "WikiQuicky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE764A89262574A2000A45B8 /* Debug */,
+				CE764A8A262574A2000A45B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE764A8B262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuicky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE764A8C262574A2000A45B8 /* Debug */,
+				CE764A8D262574A2000A45B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE764A8E262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuickyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE764A8F262574A2000A45B8 /* Debug */,
+				CE764A90262574A2000A45B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE764A91262574A2000A45B8 /* Build configuration list for PBXNativeTarget "WikiQuickyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE764A92262574A2000A45B8 /* Debug */,
+				CE764A93262574A2000A45B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE764A6A2625749E000A45B8 /* WikiQuicky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE764A6B2625749E000A45B8 /* WikiQuicky.xcdatamodel */,
+			);
+			currentVersion = CE764A6B2625749E000A45B8 /* WikiQuicky.xcdatamodel */;
+			path = WikiQuicky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE764A562625749E000A45B8 /* Project object */;
+}
