@@ -15,6 +15,18 @@
 		CE764A71262574A1000A45B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE764A6F262574A1000A45B8 /* LaunchScreen.storyboard */; };
 		CE764A7C262574A2000A45B8 /* WikiQuickyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A7B262574A2000A45B8 /* WikiQuickyTests.swift */; };
 		CE764A87262574A2000A45B8 /* WikiQuickyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764A86262574A2000A45B8 /* WikiQuickyUITests.swift */; };
+		CE764ABC2625844C000A45B8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764ABB2625844C000A45B8 /* UIColor+Extension.swift */; };
+		CE764AC12625845E000A45B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764AC02625845E000A45B8 /* NetworkManager.swift */; };
+		CE764AC62625847D000A45B8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764AC52625847D000A45B8 /* Menu.swift */; };
+		CE764ACB2625849F000A45B8 /* allfunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764ACA2625849F000A45B8 /* allfunc.swift */; };
+		CE764AD0262584AC000A45B8 /* auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764ACF262584AC000A45B8 /* auth.swift */; };
+		CE764AD5262584C1000A45B8 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764AD4262584C1000A45B8 /* login.swift */; };
+		CE764ADD262584CC000A45B8 /* forgot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764ADC262584CC000A45B8 /* forgot.swift */; };
+		CE764AE2262584D7000A45B8 /* launc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764AE1262584D7000A45B8 /* launc.swift */; };
+		CEA5DADF2626C42100BA5B7D /* RegistrationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DADE2626C42100BA5B7D /* RegistrationInputView.swift */; };
+		CEA5DAEE2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DAED2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift */; };
+		CEA5DAF62626D5F400BA5B7D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DAF52626D5F400BA5B7D /* UIView+Extension.swift */; };
+		CEC093542626B76900D72F8B /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC093532626B76900D72F8B /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,18 @@
 		CE764A82262574A2000A45B8 /* WikiQuickyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiQuickyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE764A86262574A2000A45B8 /* WikiQuickyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiQuickyUITests.swift; sourceTree = "<group>"; };
 		CE764A88262574A2000A45B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE764ABB2625844C000A45B8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CE764AC02625845E000A45B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE764AC52625847D000A45B8 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		CE764ACA2625849F000A45B8 /* allfunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allfunc.swift; sourceTree = "<group>"; };
+		CE764ACF262584AC000A45B8 /* auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth.swift; sourceTree = "<group>"; };
+		CE764AD4262584C1000A45B8 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		CE764ADC262584CC000A45B8 /* forgot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgot.swift; sourceTree = "<group>"; };
+		CE764AE1262584D7000A45B8 /* launc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launc.swift; sourceTree = "<group>"; };
+		CEA5DADE2626C42100BA5B7D /* RegistrationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInputView.swift; sourceTree = "<group>"; };
+		CEA5DAED2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPhoneNumberCell.swift; sourceTree = "<group>"; };
+		CEA5DAF52626D5F400BA5B7D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CEC093532626B76900D72F8B /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +185,7 @@
 		CE764AAE26257C54000A45B8 /* Launchscreen */ = {
 			isa = PBXGroup;
 			children = (
+				CE764AE1262584D7000A45B8 /* launc.swift */,
 			);
 			path = Launchscreen;
 			sourceTree = "<group>";
@@ -168,6 +193,10 @@
 		CE764AB026257CF7000A45B8 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				CEA5DAEC2626CAC300BA5B7D /* Cells */,
+				CEC093592626B7B600D72F8B /* Views */,
+				CEC093582626B7AC00D72F8B /* Controllers */,
+				CE764ACF262584AC000A45B8 /* auth.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -175,6 +204,7 @@
 		CE764AB126257CFC000A45B8 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				CE764AD4262584C1000A45B8 /* login.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -182,6 +212,7 @@
 		CE764AB226257D05000A45B8 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
+				CE764ADC262584CC000A45B8 /* forgot.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -199,6 +230,7 @@
 		CE764AB426257D4B000A45B8 /* AllFunctionality */ = {
 			isa = PBXGroup;
 			children = (
+				CE764ACA2625849F000A45B8 /* allfunc.swift */,
 			);
 			path = AllFunctionality;
 			sourceTree = "<group>";
@@ -206,6 +238,7 @@
 		CE764AB526257D59000A45B8 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CE764AC52625847D000A45B8 /* Menu.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -213,6 +246,7 @@
 		CE764AB626257DB3000A45B8 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				CE764AC02625845E000A45B8 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -220,8 +254,34 @@
 		CE764AB726257DD5000A45B8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE764ABB2625844C000A45B8 /* UIColor+Extension.swift */,
+				CEA5DAF52626D5F400BA5B7D /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEA5DAEC2626CAC300BA5B7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5DAED2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEC093582626B7AC00D72F8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEC093532626B76900D72F8B /* RegisterController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEC093592626B7B600D72F8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5DADE2626C42100BA5B7D /* RegistrationInputView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE764AC12625845E000A45B8 /* NetworkManager.swift in Sources */,
+				CEC093542626B76900D72F8B /* RegisterController.swift in Sources */,
+				CEA5DAF62626D5F400BA5B7D /* UIView+Extension.swift in Sources */,
+				CEA5DAEE2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift in Sources */,
+				CE764AE2262584D7000A45B8 /* launc.swift in Sources */,
+				CE764AD5262584C1000A45B8 /* login.swift in Sources */,
+				CE764AD0262584AC000A45B8 /* auth.swift in Sources */,
+				CE764ADD262584CC000A45B8 /* forgot.swift in Sources */,
 				CE764A662625749E000A45B8 /* ViewController.swift in Sources */,
+				CE764AC62625847D000A45B8 /* Menu.swift in Sources */,
 				CE764A6C2625749E000A45B8 /* WikiQuicky.xcdatamodeld in Sources */,
 				CE764A622625749E000A45B8 /* AppDelegate.swift in Sources */,
+				CE764ACB2625849F000A45B8 /* allfunc.swift in Sources */,
 				CE764A642625749E000A45B8 /* SceneDelegate.swift in Sources */,
+				CEA5DADF2626C42100BA5B7D /* RegistrationInputView.swift in Sources */,
+				CE764ABC2625844C000A45B8 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
