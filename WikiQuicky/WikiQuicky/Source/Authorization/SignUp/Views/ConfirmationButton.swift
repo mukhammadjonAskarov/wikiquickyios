@@ -11,6 +11,7 @@ class ConfirmationButton : UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.configure()
     }
     
     required init?(coder: NSCoder) {

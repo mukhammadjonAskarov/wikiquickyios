@@ -18,6 +18,7 @@ class RegisterController: UIViewController {
         return tableView
     }()
     
+    let confirmButton = ConfirmationButton()
     var safeArea: UILayoutGuide!
 
     
@@ -32,6 +33,7 @@ class RegisterController: UIViewController {
         self.view.backgroundColor = .white
         
         self.view.addSubview(tableView)
+        self.view.addSubview(confirmButton)
         
         self.tableView.delegate   = self
         self.tableView.dataSource = self
@@ -52,6 +54,13 @@ class RegisterController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             tableView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            
+            
+            confirmButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant:  -50),
+            confirmButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 25),
+            confirmButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -25),
+            confirmButton.heightAnchor.constraint(equalToConstant: 60)
+
             ]
         )
     }
