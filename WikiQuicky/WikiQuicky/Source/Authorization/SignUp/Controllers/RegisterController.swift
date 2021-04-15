@@ -36,21 +36,22 @@ class RegisterController: UIViewController {
         self.tableView.delegate   = self
         self.tableView.dataSource = self
         
+        self.hideKeyboardWhenTappedAround()
 
         self.registerCell()
-        self.addTableViewConstraints()
+        self.addConstraints()
     }
     
     func registerCell () {
      self.tableView.register(RegistrationPhoneNumberCell.self, forCellReuseIdentifier: "RegistrationPhoneNumberCell")
     }
     
-    func addTableViewConstraints(){
+    func addConstraints(){
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tableView.topAnchor.constraint(equalTo: safeArea.topAnchor)
+            tableView.topAnchor.constraint(equalTo: safeArea.topAnchor),
             ]
         )
     }

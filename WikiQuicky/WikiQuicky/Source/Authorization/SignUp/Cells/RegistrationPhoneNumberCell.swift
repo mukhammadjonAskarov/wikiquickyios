@@ -26,6 +26,29 @@ class RegistrationPhoneNumberCell: UITableViewCell {
         return welcome
     }()
     
+    let haveLabel : UILabel = {
+        let haveLabel = UILabel()
+        haveLabel.translatesAutoresizingMaskIntoConstraints = false
+        haveLabel.text = "have an account?"
+        haveLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        haveLabel.numberOfLines = 1
+        return haveLabel
+    }()
+    
+    let signButton : UIButton = {
+        let signButton = UIButton()
+        signButton.translatesAutoresizingMaskIntoConstraints = false
+        signButton.setTitle("Sign In", for: .normal)
+        signButton.setTitleColor(UIColor.yellow, for: .normal)
+        return signButton
+    }()
+    
+    let signView : UIView = {
+        let signView = UIView()
+        signView.translatesAutoresizingMaskIntoConstraints = false
+        return signView
+    }()
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -43,6 +66,9 @@ class RegistrationPhoneNumberCell: UITableViewCell {
         self.contentView.addSubview(phoneView)
         self.contentView.addSubview(passwordView)
         self.contentView.addSubview(confirmPasswordView)
+        self.signView.addSubview(haveLabel)
+        self.signView.addSubview(signButton)
+        self.contentView.addSubview(signView)
         
         NSLayoutConstraint.activate([
             
@@ -51,7 +77,7 @@ class RegistrationPhoneNumberCell: UITableViewCell {
             
             phoneView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30),
             phoneView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -30),
-            phoneView.topAnchor.constraint(equalTo: self.welcomeLabel.bottomAnchor, constant: 100),
+            phoneView.topAnchor.constraint(equalTo: self.welcomeLabel.bottomAnchor, constant: self.contentView.frame.height * 0.8),
             phoneView.heightAnchor.constraint(equalToConstant: 60),
             
             passwordView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 30),
@@ -63,7 +89,23 @@ class RegistrationPhoneNumberCell: UITableViewCell {
             confirmPasswordView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -30),
             confirmPasswordView.topAnchor.constraint(equalTo: self.passwordView.bottomAnchor, constant: 30),
             confirmPasswordView.heightAnchor.constraint(equalToConstant: 60),
-            confirmPasswordView.bottomAnchor.constraint(lessThanOrEqualTo: self.contentView.bottomAnchor, constant: -10)
+            
+            signView.topAnchor.constraint(equalTo: self.confirmPasswordView.bottomAnchor, constant: 30),
+            signView.heightAnchor.constraint(equalToConstant: 50),
+            signView.widthAnchor.constraint(equalToConstant: 200),
+            signView.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
+            signView.bottomAnchor.constraint(lessThanOrEqualTo: self.contentView.bottomAnchor, constant: -10),
+            
+            
+            haveLabel.leadingAnchor.constraint(equalTo: self.signView.leadingAnchor, constant: 0),
+            haveLabel.topAnchor.constraint(equalTo: self.signView.topAnchor, constant: 0),
+            haveLabel.bottomAnchor.constraint(equalTo: self.signView.bottomAnchor, constant: 0),
+            haveLabel.widthAnchor.constraint(equalToConstant: 140),
+          
+            signButton.trailingAnchor.constraint(equalTo: self.signView.trailingAnchor, constant: 0),
+            signButton.leadingAnchor.constraint(equalTo: self.haveLabel.trailingAnchor, constant: 0),
+            signButton.topAnchor.constraint(equalTo: self.signView.topAnchor, constant: 0),
+            signButton.bottomAnchor.constraint(equalTo: self.signView.bottomAnchor, constant: 0)
         ]
         )
         self.setKeyboardType()
@@ -79,6 +121,8 @@ class RegistrationPhoneNumberCell: UITableViewCell {
         self.phoneView.txtField.keyboardType = .phonePad
         self.passwordView.txtField.isSecureTextEntry = true
         self.confirmPasswordView.txtField.isSecureTextEntry = true
+        
+        
         
         self.phoneView.txtField.returnKeyType = .next
         self.passwordView.txtField.returnKeyType = .next
@@ -123,6 +167,7 @@ extension RegistrationPhoneNumberCell : UITextFieldDelegate {
             if string.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) != nil { return false }
             let newCount:Int = currentText.count + string.count - range.length
             let addingCharacter:Bool = range.length <= 0
+            
             if newCount == 4{
                 return false
             }
@@ -130,13 +175,16 @@ extension RegistrationPhoneNumberCell : UITextFieldDelegate {
             if(newCount == 8){
                 textField.text = addingCharacter ? currentText + " \(string)" : String(currentText.dropLast(2))
                 return false
+                
             }else if(newCount == 12){
                 textField.text = addingCharacter ? currentText + " \(string)" : String(currentText.dropLast(2))
                 return false
+                
             }else if(newCount == 15){
                 textField.text = addingCharacter ? currentText + "-\(string)" : String(currentText.dropLast(2))
                 return false
             }
+            
             if newCount > 17{
                 self.passwordView.txtField.becomeFirstResponder()
             }
