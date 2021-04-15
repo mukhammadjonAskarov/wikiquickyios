@@ -13,10 +13,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-       
+     
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        
         guard let winScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: winScene)
+<<<<<<< HEAD
         window?.rootViewController = UINavigationController(rootViewController: RegisterController())
+=======
+       // if launchedBefore {
+          //  window?.rootViewController = ViewControllerVC()
+        //}else {
+            window?.rootViewController = AppIntroductionVC()
+        //}
+        
+>>>>>>> b3173f749508fa81735c6581bbe21b92e7a8e6ef
         window?.makeKeyAndVisible()
     }
 
@@ -43,4 +54,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
 
