@@ -1,15 +1,15 @@
 //
-//  RegisterController.swift
+//  LoginController.swift
 //  WikiQuicky
 //
-//  Created by Shakhzod Bobokhonov on 4/14/21.
+//  Created by Shakhzod Bobokhonov on 4/15/21.
 //
 
 import UIKit
 
-class RegisterController: UIViewController {
+class LoginController: UIViewController {
     
-    let placeholders = ["Enter phone number", "Create password", "Confirm password"]
+    let placeholders = ["Enter login", "password"]
     
     let tableView : UITableView = {
         let tableView = UITableView()
@@ -54,7 +54,7 @@ class RegisterController: UIViewController {
     }
     
     func registerCell () {
-     self.tableView.register(RegistrationPhoneNumberCell.self, forCellReuseIdentifier: "RegistrationPhoneNumberCell")
+     self.tableView.register(LoginTableViewCell.self, forCellReuseIdentifier: "LoginTableViewCell")
     }
     
     func addConstraints(){
@@ -76,7 +76,7 @@ class RegisterController: UIViewController {
 }
 
 // MARK: = UITableViewDataSource
-extension RegisterController : UITableViewDataSource{
+extension LoginController : UITableViewDataSource{
   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
@@ -85,7 +85,7 @@ extension RegisterController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RegistrationPhoneNumberCell") as! RegistrationPhoneNumberCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LoginTableViewCell") as! LoginTableViewCell
         cell.configureCell(placeholders: placeholders)
         cell.signButton.addTarget(self, action: #selector(openLoginVC), for: .touchUpInside)
         cell.selectionStyle = .none
@@ -97,7 +97,7 @@ extension RegisterController : UITableViewDataSource{
 }
 
 // MARK: = UITableViewDelegate
-extension RegisterController : UITableViewDelegate {
+extension LoginController : UITableViewDelegate {
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.view.frame.height
@@ -110,7 +110,7 @@ extension RegisterController : UITableViewDelegate {
 
 
 //MARK: = Actions
-extension RegisterController {
+extension LoginController {
     
     @objc func openLoginVC(){
         let vc = LoginController()
@@ -125,3 +125,4 @@ extension RegisterController {
     
     
 }
+

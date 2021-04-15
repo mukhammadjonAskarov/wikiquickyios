@@ -26,6 +26,9 @@
 		CEA5DAEE2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DAED2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift */; };
 		CEA5DAFD2628376200BA5B7D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DAFC2628376200BA5B7D /* UIViewController+Extension.swift */; };
 		CEA5DB02262845D500BA5B7D /* ConfirmationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DB01262845D500BA5B7D /* ConfirmationButton.swift */; };
+		CEA5DB0D26284F3A00BA5B7D /* ConfirmPhoneNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DB0C26284F3A00BA5B7D /* ConfirmPhoneNumberController.swift */; };
+		CEA5DB1226284F5900BA5B7D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DB1126284F5900BA5B7D /* LoginController.swift */; };
+		CEA5DB192628523B00BA5B7D /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5DB182628523B00BA5B7D /* LoginTableViewCell.swift */; };
 		CEC093542626B76900D72F8B /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC093532626B76900D72F8B /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		CEA5DAED2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPhoneNumberCell.swift; sourceTree = "<group>"; };
 		CEA5DAFC2628376200BA5B7D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CEA5DB01262845D500BA5B7D /* ConfirmationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationButton.swift; sourceTree = "<group>"; };
+		CEA5DB0C26284F3A00BA5B7D /* ConfirmPhoneNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberController.swift; sourceTree = "<group>"; };
+		CEA5DB1126284F5900BA5B7D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CEA5DB182628523B00BA5B7D /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		CEC093532626B76900D72F8B /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +210,8 @@
 		CE764AB126257CFC000A45B8 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				CEA5DB172628522000BA5B7D /* Cells */,
+				CEA5DB162628521200BA5B7D /* Controllers */,
 				CE764AD4262584C1000A45B8 /* login.swift */,
 			);
 			path = LogIn;
@@ -267,10 +275,27 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		CEA5DB162628521200BA5B7D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5DB1126284F5900BA5B7D /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEA5DB172628522000BA5B7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5DB182628523B00BA5B7D /* LoginTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CEC093582626B7AC00D72F8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEC093532626B76900D72F8B /* RegisterController.swift */,
+				CEA5DB0C26284F3A00BA5B7D /* ConfirmPhoneNumberController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -416,6 +441,7 @@
 				CE764AC12625845E000A45B8 /* NetworkManager.swift in Sources */,
 				CEC093542626B76900D72F8B /* RegisterController.swift in Sources */,
 				CEA5DAEE2626CAF600BA5B7D /* RegistrationPhoneNumberCell.swift in Sources */,
+				CEA5DB192628523B00BA5B7D /* LoginTableViewCell.swift in Sources */,
 				CEA5DAFD2628376200BA5B7D /* UIViewController+Extension.swift in Sources */,
 				CE764AE2262584D7000A45B8 /* launc.swift in Sources */,
 				CE764AD5262584C1000A45B8 /* login.swift in Sources */,
@@ -426,9 +452,11 @@
 				CE764AC62625847D000A45B8 /* Menu.swift in Sources */,
 				CE764A6C2625749E000A45B8 /* WikiQuicky.xcdatamodeld in Sources */,
 				CE764A622625749E000A45B8 /* AppDelegate.swift in Sources */,
+				CEA5DB1226284F5900BA5B7D /* LoginController.swift in Sources */,
 				CE764ACB2625849F000A45B8 /* allfunc.swift in Sources */,
 				CE764A642625749E000A45B8 /* SceneDelegate.swift in Sources */,
 				CEA5DADF2626C42100BA5B7D /* RegistrationInputView.swift in Sources */,
+				CEA5DB0D26284F3A00BA5B7D /* ConfirmPhoneNumberController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
